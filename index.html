@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript"
+        src="https://www.maths.nottingham.ac.uk/plp/pmadw/LaTeXMathML.js">
+    </script>
+    <title>Ajay Srinivasan</title>
+    <style>
+        :root {
+            --primary-color: #bd80d5;
+            --secondary-color: #381a52;
+            --background-color: #ffffff;
+            --text-color: #333;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: var(--background-color);
+        }
+        header {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+        }
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+        h2 {
+            color: var(--secondary-color);
+        }
+        h1{
+            color: var(--background-color)
+        }
+        nav {
+            background-color: var(--primary-color);
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+        }
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        .section {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .writing-item {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="niagara.jpeg" alt="Ajay Srinivasan" class="profile-picture">
+        <div>
+            <h1>Ajay Srinivasan</h1>
+            <p>Undergraduate at University of Southern California</p>
+            <p>Mathematics, Class of 2025</p>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#" onclick="showTab('about')">About</a>
+        <a href="#" onclick="showTab('writing')">Writing</a>
+        <a href="#" onclick="showTab('reading')">Reading</a>
+        <a href="#" onclick="showTab('cv')">CV</a>
+        <a href="#" onclick="showTab('contact')">Contact</a>
+    </nav>
+
+    <main>
+        <section id="about" class="section tab-content active">
+            <h2>About Me</h2>
+            <p>I am a senior at the University of Southern California studying mathematics (with a minor in physics). My research interests include algebraic geometry (for example, areas like birational geometry, derived algebraic geometry, and homological mirror symmetry), algebraic topology (broadly in knot theory and homotopy theory), and mathematical/theoretical physics (in the geometrical aspects of quantum gravity including mirror symmetry and holography in string theory). These interests are ever-evolving, but they are things I enjoy studying and talking about at the moment. I'm applying to graduate school this year!
+            </p>
+            <p>I maintain this page to keep track of (and easily communicate) my writing and reading. I might eventually add a blog section to the page... that said, a lot of this webpage is still under construction. Write to me if anything here intrigues you!</p>
+        </section>
+
+        <section id="writing" class="section tab-content">
+            <h2>Writing</h2>
+            <p>Some original, some expository, some in progress -- most with French translations that I'll attach soon (I'm trying to learn).</p>
+            <ol type="1">
+                <li> (In progress). <a href="The_Motivic_Monadicity_Theorem.pdf" target="_blank">The motivic homotopical monadicity theorem.</a></li>
+                <li> (In progress, see part 1 of above). The adjunction monad in stable $\mathbb{{A}}^1$-homotopy theory.</li>
+                <li> <a href="IntJac.pdf" target="_blank">On the intermediate Jacobian of the cubic threefold.</a> (<a href="JacInt.pdf" target="_blank">Sur la Jacobienne intermédiaire de l'hypersurface cubique dans $\mathbb{{P}}^4$</a>)</li>
+                <li> <a href="TQFT-Frob.pdf" target="_blank">2d topological quantum field theories and Frobenius algebras.</a></li>
+                <li> (In review). <a href="Colliding_BECs.pdf" target="_blank">Vortex stability in interacting Bose-Einstein condensates.</a></li>
+                <li> <a href="2d_Ising.pdf">The Ising model in two dimensions: theory and simulation.</a></li>
+                <li> (On request). Realization of dS Vacua in String Theory. (A survey on the work in the last two decades).</li>
+            </ol>
+            Also, a translation (in progress) of SGA 4.5: <a href="Étale_Cohomology.pdf" target="_blank">Étale Cohomology.</a>
+        </section>
+
+        <section id="reading" class="section tab-content">
+            <h2>Reading</h2>
+            <p>Some things I'm reading right now -- I try to update this page regularly. Write to me if you want to chat about anything here!</p>
+            <ol type="1">
+                <li><a href="https://publications.ias.edu/sites/default/files/Number32.pdf" target="_blank">SGA 4.5: Cohomologie Étale</a></li>
+                <li> <a href="https://kerodon.net" target="_blank">Kerodon</a></li>
+                <li><a href="https://arxiv.org/abs/0806.0107" target="_blank">Hodge theoretic aspects of mirror symmetry</a></li>
+                <li><a href="https://arxiv.org/pdf/math/0601185" target="_blank">On differential graded categories</a></li>
+                <li><a href="https://academic.oup.com/book/11573" target="_blank">Fourier-Mukai Transforms in Algebraic Geometry</a></li>
+                <li><a href="https://arxiv.org/abs/math/0205287" target="_blank">$D$-equivalence and $K$-equivalence</a></li>
+                <li><a href="https://arxiv.org/abs/1706.07729" target="_blank">An overview of knot Floer homology</a></li>
+                <li><a href="https://www.math.univ-toulouse.fr/~dcisinsk/coursinftycat.pdf">Algèbre homotopique et catégories supérieures</a> (I might translate and TeX up these notes eventually)</li>
+            </ol>
+        </section>
+
+        <section id="cv" class="section tab-content">
+            <h2>CV</h2>
+            Under construction...
+        </section>
+
+        <section id="contact" class="section tab-content">
+            <h2>Contact</h2>
+            <p>Email: <span style="font-family: 'Courier New', Courier, monospace;">avsriniv at usc dot edu</span></p>
+            <p>Department of Mathematics, University of Southern California</p>
+            <p>GitHub: avsrinivasan</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Ajay Srinivasan. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showTab(tabId) {
+            const tabs = document.getElementsByClassName('tab-content');
+            for (let tab of tabs) {
+                tab.classList.remove('active');
+            }
+            document.getElementById(tabId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
